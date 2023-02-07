@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="Vitry, Vitry-Sur-Seine, Pollution, data, datagouv, airparif" />
+
+  <title>Vitry Sur Seine Application</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Dosis:400,500|Poppins:400,600,700&display=swap" rel="stylesheet">
+  <!-- Custom styles -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="images/vitry.png" />
+  <script type="text/javascript" src="{{url_for('static', filename='jquery-3.4.1.min.js')}}"></script> 
+  <script type="text/javascript" src="{{url_for('static', filename='bootstrap.js')}}"></script>
+</head>
+
+<body>
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              Vitry Sur Seine Application
+            </span>
+          </a>
+
+          <div class="navbar-collapse" id="">
+            <div class="d-none d-lg-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <img src="{{url_for('static', filename='login.png')}}" />
+
+                    <span>Connexion</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <img src="{{url_for('static', filename='signup.png')}}" />
+                    <span>Inscription</span>
+                  </a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 mb-3 mb-lg-0 mr-5">
+                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- fin header section -->
+    <!-- slider section -->
+    <section class=" slider_section position-relative">
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">01</li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1">02</li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-md-3 offset-md-2">
+                <div class="slider_detail">
+                  <h1>
+                    ANALYSE
+                    <span>
+                      POLLUTION
+                    </span>
+                  </h1>
+                  <p>
+                    En 2015 à Vitry-Sur-Seine il y avait 92 531 habitants sois 1 tonnes de dechets jetter par personnes sois 92 531 tonnes
+                  </p>
+                  <div>
+                    <a href="">
+                      En savoir plus
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-7">
+                <div class="slider_img-box">
+                  <img src="{{url_for('static', filename='slider-img.png')}}" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-3 offset-md-2">
+                <div class="slider_detail">
+                  <h1>
+                    POLLUTION
+                    <span>
+                      EVOLUTION
+                    </span>
+                  </h1>
+                  <p>
+                    La pollution est en constante évolution est nous seul pouvons changer le cour des choses alors il est temps de changer nos habitudes 
+                  </p>
+                  <div>
+                    <a href="">
+                      En savoir plus
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-7">
+                <div class="slider_img-box">
+                  <img src="{{url_for('static', filename='slider-img.png')}}" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel_btn-container">
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="sr-only">Précédent</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="sr-only">Suivant</span>
+          </a>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- fin slider section -->
+  </div>
+
+  <!-- about section -->
+
+  <section class="about_section layout_padding">
+    <div class="container">
+      <h2>
+        Pourquoi avons nous eu l'idée de cette iniative ?
+      </h2>
+      <p>
+        Aujourd'hui la pollution représente 72% du réchauffement climatique. Si on analyse correctement les évolution de pollution dans les grandes villes nous pourrons alors mettre en place des systèmes pour les réduires ainsi.
+      </p>
+    </div>
+
+    <div class="container">
+      <div class="about_card-container">
+        <div class="about_card">
+          <div class="about-detail">
+            <div class="about_img-box">
+              <img src="{{url_for('static', filename='card-img-1.png')}}"/>
+            </div>
+            <div class="card_detail-ox">
+              <h4>
+                Maison
+              </h4>
+              <p>
+                N'oublions pas que nous vivons dans ces villes nous sommes donc ainsi les premiers concernés par l'effet de la pollution
+              </p>
+            </div>
+          </div>
+          <div>
+            <a href="" class="about_btn">
+              En savoir plus
+            </a>
+          </div>
+        </div>
+        <div class="about_card">
+          <div class="about-detail">
+            <div class="about_img-box">
+              <img src="{{url_for('static', filename='card-img-2.png')}}" />
+            </div>
+            <div class="card_detail-ox">
+              <h4>
+                Les Usines
+              </h4>
+              <p>
+                N'oublions pas que les usines sont quasiment les plus responsables des pollutions dans les villes 
+              </p>
+            </div>
+          </div>
+          <div>
+            <a href="" class="about_btn">
+              En savoir plus
+            </a>
+          </div>
+        </div>
+        <div class="about_card">
+          <div class="about-detail">
+            <div class="about_img-box">
+              <img src="{{url_for('static', filename='card-img-3.png')}}" />
+            </div>
+            <div class="card_detail-ox">
+              <h4>
+                Les commerces
+              </h4>
+              <p>
+                N'oublions pas que les commercants ne faisant pas attention au recyclage jette environ 1 tonnes de dechets chaque années
+              </p>
+            </div>
+          </div>
+          <div>
+            <a href="" class="about_btn">
+              En savoir plus
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- fin about section -->
+
+
+
+  <!-- analyse section -->
+  <section class="portfolio_section layout_padding2">
+    <div class="container">
+      <h2>
+        ANALYSE
+      </h2>
+      <p>
+        Grâce à l'utilisation d'un script python nous avons pu analyser la ville de Vitry-Sur-Seine et ainsi vous mettrez sous forme de graphique et d'un tableau ça pollution
+      </p>
+    </div>
+    <div class="container layout_padding2-top ">
+      <div class="row">
+        <div class="col-md-8">
+        <img src='data:image/png;base64,{{ data }}'/>
+        </div>
+        <h1>Analyse sous forme de tableau :</h1>
+        <img src="{{url_for('static', filename='tableau.png')}}" />
+      </div>
+    </div>
+  </section>
+
+
+  <!-- end analyse section -->
+
+
+  <!-- partenaires section  -->
+  <section class="team_section layout_padding">
+    <div class="container">
+      <h2>
+        NOS PARTENAIRES
+      </h2>
+      <p>
+        Nous avons réaliser à l'aide de nos partenaires ci-dessus le projet d'analyse
+      </p>
+    </div>
+    <div class="container">
+      <div class="team_card-container layout_padding2">
+        <div class="team_card">
+          <div class="team_img-box">
+            <a href="https://www.vitry94.fr/" target="_blank"><img src="{{url_for('static', filename='vitry.png')}}" />
+          </div>
+          <div class="team_detail-box">
+          </div>
+        </div>
+        <div class="team_card">
+          <div class="team_img-box">
+            <a href="https://www.airparif.asso.fr/accueil-airparif" target="_blank"></a><img src="{{url_for('static', filename='airparif.png')}}" />
+          </div>
+          <div class="team_detail-box">
+          </div>
+        </div>
+        <div class="team_card">
+          <div class="team_img-box">
+            <a href="https://www.data.gouv.fr/fr/" target="_blank"><img src="{{url_for('static', filename='datagouv.png')}}" />
+          </div>
+          <div class="team_detail-box">
+          </div>
+        </div>
+        </div>
+  </section>
+
+
+
+
+  <!-- end partenaire section -->
+
+  
+  <!-- next section -->
+  <section class="Why_section layout_padding">
+    <div class="container">
+      <h2>L'avenir de ce projet</h2>
+      <p>
+        Par la suite nous aimerions étendre ce projet à l'ensemble des grandes villes de France comme Paris, Lille, Bordeaux, Marseille, Dijon, Strasbourg. Nous ainsi trouver des solutions rapidement connaitre l'évolution constante de cette évolution et ainsi rendre nos planette plus vivable pour les générations à venir !
+      </p>
+    </div>
+  </section>
+
+
+
+  <!-- end next section -->
+
+  <!-- info section -->
+  <section class="info_section layout_padding">
+    <div class="container info_content">
+      <div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-md-6">
+                <h5>
+                  A propos de Nous
+                </h5>
+                <ul>
+                  <li>
+                    <a href="">
+                      Nous sommes un
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      petit groupe de personnes
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      dans lequelle nous
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      sommes réunis pour 
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      lutter contre la pollution
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Soyons ensemble pour la combattre
+                    </a>
+                  </li>
+
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <h5>
+                  Nous contacter
+                </h5>
+                <ul>
+                  <li>
+                    <a href="">
+                      Pour nous contacter nous avons
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      un mail : support@vitry.com
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Nous avons égalements
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                     les réseaux sociaux 
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      qui sont disponible sur votre droite
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Merci à vous !
+                    </a>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+            <div class="form_container mt-5">
+              <form action="">
+                <input type="email" placeholder="Entrer votre adresse mail" />
+                <button type="submit">
+                  S'abonner
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="info_img-box">
+              <img src="{{url_for('static', filename='map1.png')}}" width="698" height="386" alt="" usemap="#map">
+              <map name="map"><area shape="rect" alt="" title="" coords="248,135,412,238" href="https://www.google.fr/maps/@48.775974,2.3755688,142m/data=!3m1!1e3" target="_blank" /><!-- Created by Online Image Map Editor (http://www.maschek.hu/imagemap/index)-->
+            </div>
+            <div class="d-flex justify-content-end pr-5">
+              <div class="social-box">
+                <a href="">
+                  <img src="{{url_for('static', filename='fb.png')}}" />
+                </a>
+
+                <a href="">
+                  <img src="{{url_for('static', filename='twitter.png')}}" />
+                </a>
+                <a href="">
+                  <img src="{{url_for('static', filename='linkedin1.png')}}" />
+                </a>
+                <a href="">
+                  <img src="{{url_for('static', filename='instagram1.png')}}" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!--end info section -->
+  <hr class="footer_hr">
+  <!-- footer section -->
+  <section class="container-fluid footer_section">
+    <p>
+      &copy;
+      2023 Tout droit reserver. Design par
+      <a>Groupe</a>
+    </p>
+  </section>
+  <!-- footer section -->
+
+  <script type="text/javascript" src="{{url_for('static', filename='jquery-3.4.1.min.js')}}"></script> 
+  <script type="text/javascript" src="{{url_for('static', filename='bootstrap.js')}}"></script>
+
+
+
+  <script>
+    function openNav() {
+      document.getElementById("myNav").classList.toggle("menu_width")
+      document.querySelector(".custom_menu-btn").classList.toggle("menu_btn-style")
+    }
+  </script>
+
+
+</body>
+
+</html>
